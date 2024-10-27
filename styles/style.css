@@ -11,7 +11,6 @@
 }
 .header__menu {
     width: 391px;
-    height: 22px;
 }
 .header__links-list {
     display: flex;
@@ -19,18 +18,16 @@
     list-style:none;
 }
 .header__links-list-item_no-bullit {
-    text-decoration: none;
+    list-style: none;
 }
 .header__links-list-item {
     list-style:circle;
-    text-decoration: underline;
-    text-underline-offset: 4px;
 }
 .header__link_active {
-    text-underline-offset: 4px;
+    text-decoration: none;
 }
 .header__link {
-    text-decoration: none;
+    text-underline-offset: 4px;
 }
 .header__logo {
     width: 148px;
@@ -43,7 +40,6 @@
 }
 .address {
     width: 240px;
-    height: 98px;
     text-decoration: none;
     letter-spacing: 0,3px;
     line-height: 25.5px;
@@ -53,12 +49,15 @@
  .cover {
     display: grid;
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     position: relative;
     z-index: 1;
-    padding: 165px 50px;
+    padding-top: 165px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
 }
 .overlay {
     position: absolute;
@@ -72,8 +71,6 @@
 .cover__title {
     position: relative;
     width: 1000px;
-    height: 355px;
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
@@ -106,9 +103,9 @@
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    padding-top: 135px;
+    
     padding-left: 28px;
-    padding-bottom: 62px;
+    
     align-self: flex-end;
 }
 .cover__description-text {
@@ -120,10 +117,11 @@
     align-self: center;
 }
 .bet-button {
+    font-family: 'Raleway' sans-serif;
     border: 1px solid #FFFFFF;    
     background-color: transparent;
     width: 256px;
-    height: 51px;
+    min-height: 51px;
     text-align: center;
     word-spacing: normal;
 }
@@ -134,7 +132,6 @@
     margin: 0 24px;
 }
 .lots__heading {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -255,7 +252,6 @@
     text-transform: uppercase;
 }
 .about__text {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -280,6 +276,13 @@
     flex-direction: column;
     text-align: center;
     justify-self: center;
+    text-decoration: none;
+}
+.footer__menu-link_active {
+    text-decoration: none;
+}
+.footer__menu-link {
+    text-underline-offset: 4px;
 }
 .footer__social-list {
     display: flex;
@@ -290,3 +293,4 @@
     width: 48px;
     height: 48px;
 }
+
